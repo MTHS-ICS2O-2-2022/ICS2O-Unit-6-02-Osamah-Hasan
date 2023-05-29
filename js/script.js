@@ -16,14 +16,14 @@ if (navigator.serviceWorker) {
 }
 
 function myButtonClicked() {
+  // this is a cookie clicker game
+  // process
+if ( localStorage.clicks ) {
+  localStorage.clicks = Number(localStorage.clicks) + 1
+} else {
+  localStorage.clicks = 1
+}
 
-  //process
-  if ( localStorage.clicks ) {
-    localStorage.clicks = Number(localStorage.clicks) + 1
-  } else {
-    localStorage.clicks = 1
-  }
-
-  //output
-  document.getElementById("clicks").innerHTML = "Your have" + localStorage.clicks + " cookies!"
+// output
+document.getElementById('clicks').innerHTML = "You have " + localStorage.clicks + " cookies!"
 }
