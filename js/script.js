@@ -16,5 +16,14 @@ if (navigator.serviceWorker) {
 }
 
 function myButtonClicked() {
-  alert("Answer will be supported soon")
+
+  //process
+  if ( localStorage.clicks ) {
+    localStorage.clicks = Number(localStorage.clicks) + 1
+  } else {
+    localStorage.clicks = 1
+  }
+
+  //output
+  document.getElementById("clicks").innerHTML = "Your have" + localStorage.clicks + " cookies!"
 }

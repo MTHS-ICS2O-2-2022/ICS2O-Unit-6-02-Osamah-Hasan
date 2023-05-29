@@ -7,7 +7,7 @@
     <meta name="keywords" content="mths, ics20, osamah" />
     <meta name="auther" content="Osamah hasan" />
     <meta name="theme-color" content="#ffffff" />
-    <title>Git hub PWA</title>
+    <title>Cookies</title>
     <link rel="cannoical" href="https://MTHS-ICS2O-2-2022.github.io/ICS2O-Unit-1-08-Osamah-Hasan" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -46,37 +46,26 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Timplate</span>
+          <span class="mdl-layout-title">Cookie game</span>
         </div>
       </header>
       <main class="mdl-layout__content">
-        <img src="./images/co.png" alt="code" />
-        <div class="page-content">what is your circle leanght</div>
-        <!--the comment for the name-->
-        <form action="#">
-          <div class="mdl-textfield mdl-js-textfield">
-            <!-- input pattern attribute -->
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="[1-9]*"
-              id="demo-input"
-            />
-            <!-- mdl-textfield__label -->
-            <label class="mdl-textfield__label" for="demo-input"
-              >Inpot number</label
-            >
-            <!-- class "mdl-textfield__error" -->
-            <span class="mdl-textfield__error">Input number</span>
-          </div>
-        </form>
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
-        >
-          search
-        </button>
-        <p>The answer is:</p>
+        <div class="page-content-instructions">
+          <div id="instructions">Click to get cookies</div>
+        </div>
+        <br />
+        <div class="cookies">
+          <!-- Accent-colored raised button with ripple -->
+          <button class="image" id="cookie">
+            <img src="/images/cooke.jpeg" alt="cookie" width="500px" height="500px"
+            oneclick="myButtonClicked()">
+          </button>
+        </div>
+        <br />
+        <br />
+        <div class="page-content-answer">
+          <div id="clicks"></div>
+        </div>
       </main>
     </div>
   </body>
